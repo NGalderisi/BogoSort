@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace ArraySorting
 {
@@ -7,24 +8,22 @@ namespace ArraySorting
     {
         static void Main(string[] args)
         {
-            int[] numbers = {5, 4, 3, 2, 1 };
-            Console.WriteLine(numbers);
-            int [] final = BogoSort(numbers);
-            for (int i = 0; i < final.Length; i++)
-                Console.Write($"{final[i]} ");
+            int[] numbers = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+            BogoSort(numbers);
 
         }
 
-        static int[] BogoSort (int [] numbers)
+        static void BogoSort (int [] numbers)
         {
-            Random rnd = new Random();
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            Random rnd = new Random();            
             bool unsorted = true;
             int counter = 1;
-            int[] checkOrder = new int[numbers.Length];
 
             while (unsorted)
             {
-                checkOrder = new int[numbers.Length];
+                int[] checkOrder = new int[numbers.Length];
                 List<int> arrayPlaceChecker = new List<int>();
 
                 for (int i = 0; i < numbers.Length;)
@@ -37,19 +36,35 @@ namespace ArraySorting
                         i++;
                     }
                 }
-                if (checkOrder[0] < checkOrder[1] && checkOrder[1] < checkOrder[2] && checkOrder[2] < checkOrder[3] && checkOrder[3] < checkOrder[4])
+                for (int i = 0; i < numbers.Length-1;)
                 {
-                    unsorted = false;
-                    Console.WriteLine($"It took {counter} attempt(s) to sort this correctly");
-                }
-                else
-                { 
-                    counter++;
-                }
+                    if (checkOrder[i] < checkOrder[i+1])
+                    {
+                        if (i == (numbers.Length - 2))
+                        {
+                            stopWatch.Stop();
+                            TimeSpan ts = stopWatch.Elapsed;
+                            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
+                            unsorted = false;
+                            Console.WriteLine("RunTime " + elapsedTime);
+                            Console.WriteLine($"It took {counter} attempt(s) to sort this correctly");
+                            for (int x = 0; x < checkOrder.Length; x++)
+                                Console.Write($"{checkOrder[x]} ");
 
+                        }
+                        i++;
+                    }
+                    else
+                    {
+                        if (counter % 1000000 == 0)
+                        {
+                            Console.WriteLine($"{counter/ 1000000} million");
+                        }
+                        counter++;
+                        break;
+                    }
+                }
             }
-
-            return checkOrder;
 
         }
     }
