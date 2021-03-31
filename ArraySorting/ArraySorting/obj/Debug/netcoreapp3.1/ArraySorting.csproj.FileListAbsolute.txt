@@ -1,0 +1,13 @@
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\bin\Debug\netcoreapp3.1\ArraySorting.exe
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\bin\Debug\netcoreapp3.1\ArraySorting.deps.json
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\bin\Debug\netcoreapp3.1\ArraySorting.runtimeconfig.json
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\bin\Debug\netcoreapp3.1\ArraySorting.runtimeconfig.dev.json
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\bin\Debug\netcoreapp3.1\ArraySorting.dll
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\bin\Debug\netcoreapp3.1\ArraySorting.pdb
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\obj\Debug\netcoreapp3.1\ArraySorting.csprojAssemblyReference.cache
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\obj\Debug\netcoreapp3.1\ArraySorting.AssemblyInfoInputs.cache
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\obj\Debug\netcoreapp3.1\ArraySorting.AssemblyInfo.cs
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\obj\Debug\netcoreapp3.1\ArraySorting.csproj.CoreCompileInputs.cache
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\obj\Debug\netcoreapp3.1\ArraySorting.dll
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\obj\Debug\netcoreapp3.1\ArraySorting.pdb
+C:\Users\natha\source\git\C#ArraySorting\array-sort\ArraySorting\ArraySorting\obj\Debug\netcoreapp3.1\ArraySorting.genruntimeconfig.cache
