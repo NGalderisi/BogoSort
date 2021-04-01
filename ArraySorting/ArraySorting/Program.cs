@@ -39,7 +39,7 @@ namespace ArraySorting
                 }
                 for (int i = 0; i < numbers.Length-1;)
                 {
-                    if (checkOrder[i] < checkOrder[i+1])
+                    if (checkOrder[i] <= checkOrder[i+1])
                     {
                         if (i == (numbers.Length - 2))
                         {

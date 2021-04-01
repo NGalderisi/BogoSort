@@ -31,5 +31,13 @@ namespace ArraySortingTests
             int[] sortedtest = Program.BogoSort(testnumbers);
             CollectionAssert.AreEqual(expectedresult, sortedtest);
         }
+        [TestMethod]
+        public void TestMethod4()
+        {
+            int[] testnumbers = { 5, 1, 1, 1, 1 };
+            int[] expectedresult = { 1, 1, 1, 1, 5 };
+            int[] sortedtest = Program.BogoSort(testnumbers);
+            CollectionAssert.AreEqual(expectedresult, sortedtest);
+        }
     }
 }
