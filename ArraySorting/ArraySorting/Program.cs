@@ -4,26 +4,27 @@ using System.Diagnostics;
 
 namespace ArraySorting
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            int[] numbers = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+            int[] numbers = { 6, 5, 4, 3, 2, 1 };
             BogoSort(numbers);
 
         }
 
-        static void BogoSort (int [] numbers)
+        public static int[] BogoSort (int [] numbers)
         {
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
             Random rnd = new Random();            
             bool unsorted = true;
             int counter = 1;
+            int[] checkOrder = new int[numbers.Length];
 
             while (unsorted)
             {
-                int[] checkOrder = new int[numbers.Length];
+                checkOrder = new int[numbers.Length];
                 List<int> arrayPlaceChecker = new List<int>();
 
                 for (int i = 0; i < numbers.Length;)
@@ -56,15 +57,12 @@ namespace ArraySorting
                     }
                     else
                     {
-                        if (counter % 1000000 == 0)
-                        {
-                            Console.WriteLine($"{counter/ 1000000} million");
-                        }
                         counter++;
                         break;
                     }
                 }
             }
+            return checkOrder;
 
         }
     }
